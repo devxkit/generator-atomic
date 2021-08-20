@@ -1,0 +1,9 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorName": "André Hoendgen",
+      "authorEmail": "hello@andre-hoendgen.de",
+      "authorUrl": "https://andre-hoendgen.de"
+    }
+  }
+}

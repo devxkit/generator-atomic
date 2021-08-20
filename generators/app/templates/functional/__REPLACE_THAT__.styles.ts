@@ -1,0 +1,5 @@
+import styled from '<%- styledComponentsType %>';
+
+export const Root = styled.<%- baseComponent %>`
+
+`;
