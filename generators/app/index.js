@@ -113,14 +113,7 @@ module.exports = class extends Generator {
 
     const IS_FUNCTIONAL = COMPONENT_TYPE === 'functional';
 
-    const WITH_STYLED_COMPONENTS = this.getConfigValue(
-      'styledComponents',
-      true,
-      function(config) {
-        return config.styledComponents !== true;
-      },
-      false,
-    );
+    const WITH_STYLED_COMPONENTS = config.styledComponents === true;
 
     let name = camelCase(this.answers.name, {pascalCase: true});
 
@@ -173,7 +166,7 @@ module.exports = class extends Generator {
       withClassNameImport    = `import {PropsWithNativeStyle} from "${ WITH_STYLE_INTERFACE_IMPORT_PATH }";\n`;
     }
 
-    let styleImport           = `import {Root} from './${ name }.styles';`;
+    let styleImport           = `\nimport {Root} from './${ name }.styles';`;
     let templateBaseComponent = 'Root';
 
     if (!WITH_STYLED_COMPONENTS) {
@@ -195,7 +188,7 @@ module.exports = class extends Generator {
     }
 
     if (WITH_STYLED_COMPONENTS) {
-      filesToCopy.push('__REPLACE_THAT__.style.ts');
+      filesToCopy.push('__REPLACE_THAT__.styles.ts');
     }
 
     let componentImport = `import {${ name }} from "./${ name }";\n`;

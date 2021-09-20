@@ -29,6 +29,7 @@ A basic yeoman based generator to create atomic components for react.
     "withStyleInterfaceImportPath": "@devxkit/react-ui-baseline",
     "tests": true,
     "stories": true,
+    "styledComponents": true,
     "useNative":false, // native and macro can't be used together
     "useMacro": false
   }
