@@ -1,4 +1,4 @@
-import React from 'react'<%- styleImport %>
+import React from 'react'<%- styleImport %>;
 <%- withClassNameImport %>
 
 <%- withClassNameProps %> {

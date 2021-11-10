@@ -1,4 +1,4 @@
-import {Component} from 'react';<%- styleImport %>
+import {Component} from 'react';<%- styleImport %>;
 <%- withClassNameImport %>
 
 interface State {

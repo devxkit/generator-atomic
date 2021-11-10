@@ -162,7 +162,7 @@ module.exports = class extends Generator {
       withClassNameClassName = `style={${
         IS_FUNCTIONAL ? '' : 'this.'
       }props.style} `;
-      withClassNameProps     = 'interface Props extends PropsWithStyle';
+      withClassNameProps     = 'interface Props extends PropsWithNativeStyle';
       withClassNameImport    = `import {PropsWithNativeStyle} from "${ WITH_STYLE_INTERFACE_IMPORT_PATH }";\n`;
     }
 
